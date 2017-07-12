@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>百度next</title>
+		<style type="text/css">
+		/*外边距的距离 margin*/
+			body, input{
+				margin: 0;
+			}
+			/*body的最小宽度*/
+			body{
+			 	min-width: 1000px;  
+			}
+			.top .left{
+				align-content: left;
+				float: left;
+			}
+			.top .right{
+				align-content: right;
+				float: right;
+			}
+			.left a{
+		 	color: #000;
+		 	text-decoration: none;
+		 	font-family: "宋体";
+			}
+			.left .PM{
+				color: greenyellow;
+			}
+			.left .news{
+				text-decoration: underline ;
+			}
+			.right .different{
+				background-color: dodgerblue;
+			}
+			.photo .text{
+				width: 600px;
+				height: 40px;
+			}
+			.ad{
+				position: absolute;
+				right: 100px;
+				bottom: 100px;
+				
+			}
+			 
+			
+		</style>
+		
+	</head>
+	<body>
+		<!--01最上部分
+			内容：
+			上下由2条分隔线，
+			
+			左边是地点，天气，温度，等等
+			*点击前几个，都跳转至郑州天气页面，
+			* 点击换肤和消息，跳转到相关内容
+			
+			右边是可以点击的某些东西
+			*是某些链接组成
+		-->
+		 
+	 		<hr style="margin-top: 0px;">
+			 
+			<div class="top"> 
+				<div class="left">
+					<a href="###" class="clear">郑州:</a>
+					<a href="###" class="clear"><img src="多云.jpg"></a>
+					<a href="###" class="clear">37℃</a>
+					<a href="###" class="PM">轻度</a>
+					<a href="###" class="clear">113</a>
+					|
+					<a href="###" class="news">换肤</a>
+					<a href="###" class="news">消息</a>
+				</div>
+			 
+				<div class="right">  
+					<a href="###" class="select"> 新闻</a>
+					<a href="###" class="select"> hao123</a>
+					<a href="###" class="select"> 地图</a>
+					<a href="###" class="select"> 视频</a>
+					<a href="###" class="select"> 贴吧</a>
+					<a href="###" class="select"> 学术</a>
+					<a href="###" class="select"> 设置</a>
+					<a href="###" class="different"> 更多产品</a>
+					 
+				
+				</div>
+			</div>	 
+			 <hr style="margin-top: 3%;">
+ 
+		<!--02上半部分-->
+		<div class="photo" align="center">
+			
+			<img src="baidu.jpg" >
+			
+			  <div>
+			  	<input type="text" class="text"/> 
+			    <button style="background-color: dodgerblue;width: 100px;height: 45px;margin-left: -6px;">  <scan style="font-size: 150%;">  百度一下</scan></button> 
+			  </div>
+			  
+			
+		</div>
+		
+		<!--03推荐内容-->
+		<div class="ad">
+			<div >
+				这是一个小广告
+				<img src="关闭蓝鸥小广告.jpg" />
+			</div>
+			<div>
+				<img src="蓝鸥小广告.jpg"/>
+				
+			</div>
+		</div>
+		 
+		 
+		
+		
+		
+	</body>
+</html>

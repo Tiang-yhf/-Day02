@@ -1,0 +1,67 @@
+<!--
+今天周6
+因为昨天周五，学习了如何使用html的标签来做百度页面
+所以今天自学了如何使用css来做百度页面
+
+主要使用的css格式： 1.css的内联式（通过.class{格式参数：参数值}的形式来写的网页
+			同时也了解到css三种样式的优先级 一般是 内联式>嵌入式>外联式（其中嵌入式不一定大于外联式，要根据就近原则来判断）
+			
+			这三种格式分别是：
+			内联式/内部样式表：比如  body{ background-color：red; }
+					     .photo{position:absolute；right: 100px;	bottom: 100px;}
+			外联式/外部样式表：<link rel="stylesheet" href="icoke.css" type="text/css"> //还没使用过
+			
+			嵌入式:  <span style="background-color: dodgerblue">更多产品</span>
+			
+			
+			2.学到了很多重要的标签
+			如下：
+			（1）.精准控制div的位置：position:absolute；right: 100px;	bottom: 100px;
+			（2）.控制input，body等的外边距 margin:0;
+			（3）.min-width, 控制body的最小宽度
+			（4）.align-content 和align-items :center 分别表示多行和一行居中
+			 (5)	 .float 浮动标签，可以控制左右（一般html都是从上到下的）
+			（6）.text-decoration: none;可以去掉文本下划线（用于对文本的修饰）
+			 (7) .margin-right:右边距（用于控制外边距）-----与right不同的是，right只有在使用绝对位置时（position：absolute; ），才会使用		
+			 
+			 
+			 3.其中遇到的困难
+			 (1).控制位置时，非常的生疏，及其困难。比如<hr>线和文本重合问题！！！！。
+			 开始一直搞不懂div为什么会和hr重合。。该来该去找了半天原因，还是没有办法调整好位置。--》猜测hr不属于块的部分，所以不受div格式的约束，才会重合
+			 解决办法：调整了hr的样式，控制了他的位置， 于是问题得到解决	
+			 解决代码如下：
+			 	<hr style="margin-top: 0px;">和 <hr style="margin-top: 3%;">
+			 (2).控制input的大小和百度一下位置问题：
+			 因为开始控制的是图片和输入框还有“百度一下”整体的div，所以难以控制input的大小和位置。
+			 解决办法 ，发现应该对input输入框做精准的控制才是对的。
+			 解决代码如下：
+			 	 
+			 	.photo .text{
+				width: 600px;
+				height: 40px;
+			    }
+			    <input type="text" class="text"/> 
+			    从而能够准确的控制 输入框的大小
+			    而控制位置的办法是，整体居中：
+			    <div class="photo" align="center">
+					<img src="baidu.jpg" >
+					
+					  <div>
+					  	<input type="text" class="text"/> 
+					  	百度一下
+					  </div>
+				</div>
+			 (3).让输入框和百度一下重叠，开始不管怎么设置，input和百度一下始终都不能对接到一起
+			 解决办法，问同学，在同学的告知下，知道可以通过margin-left:-6px可以实现让他们对接到一起
+			
+			 收获：以后设计网页的步骤：
+			 1.现将网页分成几个部分：通过 绝对位置position：absolute; right：36px; top:72px等或者margin-right：75px或者margin-right:20%等来控制具体位置
+			 2.然后分析每个部分的具体组成: form还是 由图片构成，等等的整体框架
+			 3.具体看每个部分是整体的样式，还是局部的样式，调整好格式
+			 4.调整每个小元素的格式
+			
+			复习部分html标签
+			设置字体大小<h1>至<h6> 和<font size 1-6> 其中有不同之处，字体大小<h1>1号标题对应的是h6号字体,一次类推，全都是逆序
+
+
+-->
